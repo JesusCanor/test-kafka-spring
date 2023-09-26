@@ -16,7 +16,7 @@ public class SpringKafkaProviderApplication {
 	@Bean
 	CommandLineRunner commandLineRunner(KafkaTemplate<String, String> kafkaTemplate){
 		return args -> {
-			kafkaTemplate.send("example", "La anyiyi!");
+			kafkaTemplate.send("customers", "La anyiyi!");
 		};
 	}
 }
